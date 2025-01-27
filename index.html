@@ -71,10 +71,61 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="projects-container">No project Uploaded</div>
+    <div class="projects-container">
+      <!-- IoT Projects -->
+      <div class="project-category" onclick="toggleProjects('iot-projects')">
+        <h3 class="category-title" >IoT</h3>
+        <div id="iot-projects" class="project-list hidden">
+          <div class="project-item">
+            <a href="Farmsense.html" target="_blank">IoT Weather Station</a>
+          </div>
+          <div class="project-item">
+            <a href="smart_irrigation.html" target="_blank">Smart Irrigation System</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Machine Learning Projects -->
+      <div class="project-category" onclick="toggleProjects('ml-projects')">
+        <h3 class="category-title" >Machine Learning</h3>
+        <div id="ml-projects" class="project-list hidden">
+          <div class="project-item">
+            <a href="https://github.com/Mike-ferka/Data-Science-and-ML/" target="_blank">View BuildingABrain.ipynb on GitHub</a>
+          </div>
+          <div class="project-item">
+            <a href="crop_yield_prediction.html" target="_blank">Crop Yield Prediction</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Data Analytics Projects -->
+      <div class="project-category"  onclick="toggleProjects('data-projects')">
+        <h3 class="category-title">Data Analytics</h3>
+        <div id="data-projects" class="project-list hidden">
+          <div class="project-item">
+            <a href="sales_data_analysis.html" target="_blank">Sales Data Analysis</a>
+          </div>
+          <div class="project-item">
+            <a href="market_trends.html" target="_blank">Market Trend Insights</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Web Development Projects -->
+      <div class="project-category" onclick="toggleProjects('web-projects')">
+        <h3 class="category-title">Web Development</h3>
+        <div id="web-projects" class="project-list hidden">
+          <div class="project-item">
+            <a href="hospital_management_system.html" target="_blank">Hospital Management System</a>
+          </div>
+          <div class="project-item">
+            <a href="portfolio_website.html" target="_blank">Portfolio Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   
-
   <section id="experience">
     <h2>Work Experience</h2>
     <ul>
@@ -108,5 +159,114 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    // Toggle visibility of project lists
+    function toggleProjects(id) {
+      const projectList = document.getElementById(id);
+      projectList.classList.toggle("hidden");
+    }
+  
+    // Show project details
+    function showProjectDetails(projectId) {
+      const projectDetails = {
+        iot1: {
+          title: "IoT Weather Station",
+          image: "images/iot_weather_station.jpg",
+          content: "An IoT-based weather monitoring system using ESP8266 and Firebase.",
+        },
+        iot2: {
+          title: "Smart Irrigation System",
+          image: "images/smart_irrigation.jpg",
+          content: "A system to automate irrigation based on soil moisture levels.",
+        },
+        ml1: {
+          title: "Urban Air Quality Prediction",
+          image: "images/air_quality.jpg",
+          content: "A machine learning project predicting PM2.5 levels using Sentinel-5P data.",
+        },
+        ml2: {
+          title: "Crop Yield Prediction",
+          image: "images/crop_yield.jpg",
+          content: "Using ML models to forecast crop yields for smart farming.",
+        },
+        data1: {
+          title: "Sales Data Analysis",
+          image: "images/sales_analysis.jpg",
+          content: "Analyzing sales data to provide actionable business insights.",
+        },
+        data2: {
+          title: "Market Trend Insights",
+          image: "images/market_trends.jpg",
+          content: "A dashboard providing real-time market trends using Power BI.",
+        },
+        web1: {
+          title: "Hospital Management System",
+          image: "images/hospital_system.jpg",
+          content: "A React-based web application for managing hospital operations.",
+        },
+        web2: {
+          title: "Portfolio Website",
+          image: "images/portfolio.jpg",
+          content: "A personal portfolio showcasing professional projects and skills.",
+        },
+      };
+  
+      const details = projectDetails[projectId];
+      document.getElementById("project-title").innerText = details.title;
+      document.getElementById("project-image").src = details.image;
+      document.getElementById("project-content").innerText = details.content;
+  
+      document.getElementById("projects").classList.add("hidden");
+      document.getElementById("project-details").classList.remove("hidden");
+    }
+  
+    // Hide project details
+    function hideProjectDetails() {
+      document.getElementById("project-details").classList.add("hidden");
+      document.getElementById("projects").classList.remove("hidden");
+    }
+  </script>
+  
+  <style>
+    .hidden {
+      display: none;
+    }
+  
+    .project-category {
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px;
+      background-color: #f9f9f9;
+    }
+  
+    .category-title {
+      cursor: pointer;
+      font-weight: bold;
+    }
+  
+    .project-list {
+      margin-top: 10px;
+    }
+  
+    .project-item {
+      cursor: pointer;
+      padding: 5px;
+      margin: 5px 0;
+      background-color: #eee;
+      border-radius: 3px;
+      transition: background-color 0.3s;
+    }
+  
+    .project-item:hover {
+      background-color: #ddd;
+    }
+  
+    #project-details img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+  </style>
 </body>
 </html>

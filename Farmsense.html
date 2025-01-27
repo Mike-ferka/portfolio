@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>FarmSense</title>
+  <style>
+    /* Image styles for responsiveness */
+    .image-section {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* For small devices */
+    @media (max-width: 600px) {
+      .image {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <h1 class="logo">Ferka Michael</h1>
+      <i class="fas fa-bars menu-icon" id="menu-open"></i>
+      <ul id="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Projects</a></li>
+        <li><a href="index.html">Skills</a></li>
+        <li><a href="index.html">Experience</a></li>
+        <li><a href="index.html">Education</a></li>
+        <li><a href="index.html">Contact</a></li>
+        <li><a href="index.html">Resume</a></li>
+        <i class="fas fa-times" id="menu-close"></i>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <h1>FarmSense: A Solar-powered Smart Weather System</h1>
+  </header>
+
+  <section>
+    <h2>Project Overview</h2>
+    <p>
+      FarmSense is a cutting-edge, solar-powered smart weather monitoring system designed to revolutionize agricultural practices in Ghana and beyond. It leverages IoT and machine learning technologies to provide accurate, real-time insights into essential environmental parameters. The project aims to empower farmers with data-driven decision-making for better crop yield and resource management.
+    </p>
+  </section>
+
+  <section>
+    <h2>Problem Statement</h2>
+    <p>
+      In Ghana and many parts of Africa, farmers struggle with unpredictable weather patterns, limited access to real-time data on soil moisture, temperature, and rainfall, leading to poor crop yield and inefficient resource use. Farmers often rely on traditional methods of irrigation, which waste water, and lack the means to predict optimal planting and harvesting times. These challenges significantly impact food security and agricultural productivity.
+    </p>
+  </section>
+
+  <section>
+    <h2>Approach & Methods</h2>
+    <p>
+      FarmSense was developed to address these challenges using the Internet of Things (IoT) and machine learning. The system collects real-time environmental data using various sensors, including temperature and humidity, soil moisture, rainfall, and light intensity. The collected data is transmitted via the ESP8266 microcontroller to the cloud for analysis. Machine learning algorithms analyze the data to provide farmers with insights and predictions that can optimize their farming practices. 
+    </p>
+  </section>
+
+  <section>
+    <h2>Features and Components</h2>
+    <ul>
+      <li><strong>Temperature and Humidity Monitoring:</strong> Utilized the DHT11 sensor to measure real-time environmental conditions.</li>
+      <li><strong>Soil Moisture Detection:</strong> Implemented capacitive soil moisture sensors to monitor water levels and optimize irrigation.</li>
+      <li><strong>Rainfall Detection:</strong> Incorporated a rain sensor to assess precipitation and predict potential flooding scenarios.</li>
+      <li><strong>Light Intensity Measurement:</strong> Deployed an LDR sensor to track sunlight exposure, crucial for plant photosynthesis.</li>
+      <li><strong>Data Transmission:</strong> Powered by ESP8266 NodeMCU, the system sends sensor readings to a Firebase Realtime Database for storage and analysis.</li>
+      <li><strong>Solar Power:</strong> Ensured sustainability by using a solar panel to power the entire system.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Hardware Setup & Integration</h2>
+    <p>
+      The system is built around the ESP8266 NodeMCU, which acts as the central controller. The sensors are connected to the NodeMCU, which collects and transmits data to a Firebase Realtime Database. A solar panel provides power to the system, ensuring it operates sustainably in remote agricultural areas.
+    </p>
+    <!-- Add images of hardware setup here -->
+    <div class="image-section">
+      <img class="image" src="images/farmsense.jpeg" alt="Hardware Setup">
+      <p>Hardware Setup</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Web Application Dashboard</h2>
+    <p>
+      The web application provides farmers with an intuitive interface to visualize the sensor data. It offers insights into environmental parameters, allowing farmers to make informed decisions about irrigation, planting, and harvesting. The dashboard is built to be responsive and accessible via smartphones and computers.
+    </p>
+    <!-- Add image of web app dashboard here -->
+    <div class="image-section">
+      <img class="image" src="images/dashboard.png" alt="Web Application Dashboard">
+      <p>Web Application Dashboard</p>
+    </div>
+    <div class="image-section">
+        <img class="image" src="images/data.png" alt="Web Application Dashboard">
+        <p>Sensor Data</p>
+      </div>
+      <div class="image-section">
+        <img class="image" src="images/sensors.png" alt="Web Application Dashboard">
+        <p>Sensors Overview</p>
+      </div>
+    <p><a href="https://final-year-project-frontend-84cz.onrender.com/" target="_blank">Visit the web application</a></p>
+    <p><a href="https://github.com/Mike-ferka/Final-Year-Project.git" target="_blank">Check out project on GitHub</a>
+    </p>
+  </section>
+
+  <section>
+    <h2>Solution</h2>
+    <p>
+      FarmSense provides a comprehensive solution for farmers by offering real-time weather monitoring, soil moisture tracking, and rainfall predictions, which help optimize irrigation schedules, prevent overwatering, and improve crop yield. The machine learning algorithms enhance decision-making by providing data-driven recommendations for sustainable farming practices.
+    </p>
+  </section>
+
+  <section>
+    <h2>Outcomes</h2>
+    <p>
+      FarmSense was tested in a live agricultural environment, demonstrating its capability to:
+    </p>
+    <ul>
+      <li>Enhance irrigation scheduling, reducing water wastage.</li>
+      <li>Provide accurate weather insights, helping farmers plan better.</li>
+      <li>Support sustainable farming practices through solar-powered operations.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Conclusion</h2>
+    <p>
+      FarmSense has shown great potential as a tool for improving agricultural practices and addressing food security challenges in Ghana. With the scalability of the system and future enhancements, including the integration of additional sensors and advanced machine learning models, FarmSense can play a crucial role in supporting sustainable agriculture across Africa.
+    </p>
+  </section>
+
+  <section>
+    <h2>Future Prospects</h2>
+    <p>
+      FarmSense has the potential to scale into a commercial product for African farmers. By integrating more advanced sensors and refining machine learning models, the system can become a vital tool for achieving food security and economic growth.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Ferka Michael</p>
+  </footer>
+
+  <script>
+    const menuOpen = document.getElementById("menu-open");
+    const menuClose = document.getElementById("menu-close");
+    const navLinks = document.getElementById("nav-links");
+
+    menuOpen.addEventListener("click", () => {
+      navLinks.classList.add("active");
+    });
+
+    menuClose.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+    });
+  </script>
+</body>
+</html>
