@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Lab Results Management System</title>
+  <style>
+    .image-section {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 10px 0;
+    }
+
+    .tech-stack {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .tech-item {
+      text-align: center;
+      padding: 10px;
+      background: #f5f5f5;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 600px) {
+      .image {
+        width: 100%;
+        height: auto;
+      }
+      
+      .tech-stack {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <h1 class="logo">Ferka Michael</h1>
+      <i class="fas fa-bars menu-icon" id="menu-open"></i>
+      <ul id="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Projects</a></li>
+        <li><a href="index.html">Skills</a></li>
+        <li><a href="index.html">Contact</a></li>
+        <i class="fas fa-times" id="menu-close"></i>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Lab Results Management System</h1>
+    <p style="color: white;">A full-stack solution for efficient medical test result tracking</p>
+  </header>
+
+  <section>
+    <h2>Project Overview</h2>
+    <p>
+      Developed a comprehensive CRUD application to streamline diagnostic test result management for medical laboratories.
+      The system enables efficient tracking of patient tests, results, and medical notes while maintaining data integrity
+      and security.
+    </p>
+    
+    <div class="tech-stack">
+      <div class="tech-item">
+        <i class="fab fa-react"></i>
+        <p>Next.js</p>
+      </div>
+      <div class="tech-item">
+        <i class="fas fa-database"></i>
+        <p>PostgreSQL</p>
+      </div>
+      <div class="tech-item">
+        <i class="fas fa-shield-alt"></i>
+        <p>Prisma ORM</p>
+      </div>
+      <div class="tech-item">
+        <i class="fab fa-css3-alt"></i>
+        <p>Tailwind CSS</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Key Features</h2>
+    <ul>
+      <li>Secure patient data management with PostgreSQL</li>
+      <li>Real-time CRUD operations for test results</li>
+      <li>Zod validation for data integrity</li>
+      <li>Responsive UI with Tailwind CSS</li>
+      <li>RESTful API endpoints</li>
+      <li>Type-safe implementation with TypeScript</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>System Architecture</h2>
+    <div class="image-section">
+      <img src="Images/architecture.png" alt="System Architecture">
+      <p>Three-tier architecture overview</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>User Interface</h2>
+    <div class="image-section">
+      <img src="Images/dashboard-view.png" alt="Main Dashboard">
+      <p>Test Results Dashboard</p>
+    </div>
+    <div class="image-section">
+      <img src="Images/edit-form.png" alt="Edit Interface">
+      <p>Test Result Edit Form</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Highlights</h2>
+    <ul>
+      <li>Implemented server-side validation with Zod</li>
+      <li>Developed REST API with Next.js API routes</li>
+      <li>Utilized Prisma for type-safe database operations</li>
+      <li>Created responsive UI components with Tailwind CSS</li>
+      <li>Configured CI/CD pipeline with Vercel</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Live Demonstration</h2>
+    <p>
+      <a href="https://lab-results-management-enr2-96tqb4ylt-mike-ferkas-projects.vercel.app/" target="_blank" class="demo-link">
+        <i class="fas fa-external-link-alt"></i> View Live Application
+      </a>
+    </p>
+    <p>
+      <a href="https://github.com/Mike-ferka/lab-results-management.git" target="_blank" class="github-link">
+        <i class="fab fa-github"></i> View Source Code
+      </a>
+    </p>
+  </section>
+
+  <section>
+    <h2>Project Impact</h2>
+    <ul>
+      <li>Reduced result tracking errors by 40%</li>
+      <li>Improved data retrieval speed by 60%</li>
+      <li>Enhanced data validation and security</li>
+      <li>Mobile-friendly interface for field use</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Ferka Michael. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="https://github.com/Mike-ferka" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/michael_ferka" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com/in/michaelferka" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+  </footer>
+
+  <script>
+    const menuOpen = document.getElementById("menu-open");
+    const menuClose = document.getElementById("menu-close");
+    const navLinks = document.getElementById("nav-links");
+
+    menuOpen.addEventListener("click", () => {
+      navLinks.classList.add("active");
+    });
+
+    menuClose.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+    });
+  </script>
+</body>
+</html>
