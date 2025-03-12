@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ferka Michael</title>
-  <link rel="stylesheet" href="styles.css">
+  <!-- Existing head content -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Add new styles */
+    .section-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .section-header i {
+      font-size: 2.5rem;
+      color: #6a11cb;
+      margin-bottom: 1rem;
+    }
+    .feature-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+    .timeline-item {
+      border-left: 3px solid #6a11cb;
+      padding-left: 2rem;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      background: #6a11cb;
+      border-radius: 50%;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav>
+ <!-- Navigation Bar -->
+ <nav>
     <div class="nav-container">
       <h1 class="logo">Ferka Michael</h1>
       <i class="fas fa-bars menu-icon" id="menu-open"></i>
@@ -30,50 +68,195 @@
     <div class="header-content">
       <img src="Images/ferkamichael.jpeg" alt="Ferka Michael" class="profile-pic">
       <div class="header-word">
-      <h1>Ferka Michael</h1>
-      <p>Computer Engineer | Web Developer | AI/ML Practitioner | Data Analyst | IoT Enthusiast </p>
-      <div class="social-icons">
-        <a href="https://github.com/Mike-ferka" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://twitter.com/michael_ferka" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://linkedin.com/in/michaelferka" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <h1>Ferka Michael</h1>
+        <p>Computer Engineer | Web Developer | AI/ML Practitioner | Data Analyst | IoT Enthusiast</p>
+        <div class="social-icons">
+          <!-- Social icons -->
+        </div>
       </div>
-    </div>
     </div>
   </header>
 
+  <!-- About Section -->
   <section id="about">
-    <h2>About Me</h2>
-    <p> I am Michael Ferka, a Computer Engineer with expertise in Data Science, Artificial Intelligence, IoT, and Full-Stack Web Development. My work focuses on developing intelligent, data-driven systems that enhance efficiency and decision-making across industries such as agriculture, healthcare, and automation.</p>
-    <h2>What I Do</h2>
-    <p>✅ <strong>Data Science & AI/ML</strong> – Data analytics, predictive modeling, machine learning</p>
-    <p>✅ <strong>IoT & Embedded Systems</strong> – Microcontroller Programming, sensor integration, cloud connectivity</p>
-    <p>✅ <strong>Web Development</strong> – Full-stack development with React, Node.js, Express, and MongoDB, API development</p>
-    <p>✅ <strong>Software Engineering </strong>Cloud computing, and scalable architectures</p>
-  <h2>My Vision</h2>
-  <p>I am committed to leveraging data analytics, machine learning, and IoT to develop scalable and sustainable solutions. My work aims to bridge the gap between technology and real-world applications, particularly in agriculture, healthcare, and smart automation.</p>
-  
+    <div class="section-header">
+      <i class="fas fa-user-alt"></i>
+      <h2>About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="feature-card">
+        <i class="fas fa-microchip"></i>
+        <h3>IoT & Embedded System Developer</h3>
+        <p>Microcontroller Programming, system integration, sensor integration, PCB Design and cloud connectivity</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-brain"></i>
+        <h3>AI/ML Specialist</h3>
+        <p>Building intelligent systems with TensorFlow and OpenCV</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-code"></i>
+        <h3>Full-Stack Developer</h3>
+        <p>Full-Stack development with MERN stack and Next.js</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Data Analyst</h3>
+        <p>Transforming data into actionable insights</p>
+      </div>
+    </div>
   </section>
+
+  <!-- Skills Section -->
   <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Programming Languages:</strong> Python, C++, C, PHP</li>
-      <li><strong>Web Technologies:</strong> HTML, CSS, Bootsrap, JavaScript, React.js, Node.js, Express.js</li>
-      <li><strong>Machine Learning: </strong>Numpy, Pandas, XGBoost, CatBoost,Scikit-learn, Tensorflow, OpenCV</li>
-      <li><strong>Data Analysis: </strong>Dashboard, Data Analysis, Data Storytelling, Data Visualization, Excel, SQL, Tableau</li>
-      <li><strong>Database Management: </strong>SQL, MySQL, PostgreSQL, Firebase, MongoDB</li>
-      <li><strong>Tools & Technologies: </strong>Git</li>
-      <li><strong>Operating Systems: </strong>Windows, Linux</li>
-      <li><strong>Embedded systems and IoT: </strong>ATmega328, ESP8266 NodeMCU, ESP32, LoRaWAN, Sensor Integration, Sensor Callibration</li>
-     
-
-    </ul>
+    <div class="section-header">
+      <i class="fas fa-tools"></i>
+      <h2>Technical Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fas fa-keyboard"></i>
+        <ul>
+          <li>Python</li>
+          <li>C</li>
+          <li>C++</li>
+          <li>PHP</li>
+        </ul>
+      </div>
+      
+      <div class="skill-card">
+        <i class="fab fa-python"></i>
+        <ul>
+          <li>Numpy</li>
+          <li>Pandas</li>
+          <li>TensorFlow</li>
+          <li>OpenCV</li>
+          <li>Scikit-learn</li>
+          <li>XGBoost</li>
+          <li>CatBoost</li>
+        </ul>
+      </div>
+      
+      <div class="skill-card">
+        <i class="fas fa-chart-line"></i>
+        <ul>
+          <li>Excel</li>
+          <li>SQL</li>
+          <li>Tableau</li>
+          <li>Data Analysis</li>
+          <li>Dashboard</li>
+          <li>Data Storytelling</li>
+          <li>Data Visualization</li>
+          
+        </ul>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-database"></i>
+        <ul>
+          <li>MySQL</li>
+          <li>PostgreSQL</li>
+          <li>Firebase</li>
+          <li>MongoDB</li>
+        </ul>
+      </div>
+      
+      <div class="skill-card">
+        <i class="fas fa-laptop-code"></i>
+        <ul>
+          <li>HTML </li>
+          <li>CSS</li>
+          <li>Bootsrap</li>
+          <li>Tailwindcss</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>Next.js</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-microchip"></i>
+        <ul>
+          <li>ATmega328</li>
+          <li>ESP8266 NodeMCU</li>
+          <li>ESP32</li>
+          <li>Arduino</li>
+          <li>LoRaWAN gateway</li>
+          <li>Sensor Integration</li>
+          <li>Sensor Callibration</li>
+          <li>PCB Design</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-tools"></i>
+          <ul>
+          <li>Git</li>
+          <li>Firebase</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-desktop"></i>           
+        <ul>
+          <li>Windows</li>
+          <li>Linux</li>
+        </ul>
+      </div>
+      <!-- Add more skill cards -->
+    </div>
   </section>
 
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="section-header">
+      <i class="fas fa-briefcase"></i>
+      <h2>Professional Journey</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+       
+        <h3>Web Developer @ WAGMC</h3>
+        <p class="timeline-date">2024</p>
+        <p>Working as a junior frontend developer, enhancing the facility's website
+          by designing and implementing new functionalities using React,
+          maintaining optimal performance, and providing dedicated support to
+          improve user engagement and usability.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          
+          <h3>Research Intern @ DIPPER Lab</h3>
+          <p class="timeline-date">2023</p>
+          <p>Developed IoT system for monitoring electrical energy generation and
+            consumption in developing countries</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            
+            <h3>Network Administrator @ Fountain care Hospital Limited</h3>
+            <p class="timeline-date">2021-2024</p>
+            <p>Worked as network administrator, troubleshooting and resolving network
+              issues to ensure seamless communication and data transfer between
+              medical devices, resulting in improved efficiency and patient care.</p>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+         
+              <h3>Project Intern @ KNUST College of Engineering Innovation Lab</h3>
+              <p class="timeline-date">2022</p>
+              <p>Worked as an intern collaborating with a team to design and develop a
+                robotic arm and a smart dustbin using Arduino microcontroller, enabling
+                automated tasks and improving waste management efficiency.</p>
+            </div>
+      <!-- Add more timeline items -->
+    </div>
+  </section>
   <section id="projects">
     <h2>Projects</h2>
     <div class="projects-container">
       <!-- IoT Projects -->
       <div class="project-category" onclick="toggleProjects('iot-projects')">
+        <i class="fas fa-microchip"></i>
         <h3 class="category-title" >IoT & Embedded</h3>
         <div id="iot-projects" class="project-list hidden">
           <div class="project-item">
@@ -90,6 +273,8 @@
   
       <!-- Machine Learning Projects -->
       <div class="project-category" onclick="toggleProjects('ml-projects')">
+        <i class="fas fa-brain"></i>
+
         <h3 class="category-title" >Machine Learning</h3>
         <div id="ml-projects" class="project-list hidden">
           <div class="project-item">
@@ -103,6 +288,8 @@
   
       <!-- Data Analytics Projects -->
       <div class="project-category"  onclick="toggleProjects('data-projects')">
+        <i class="fas fa-chart-line"></i>
+
         <h3 class="category-title">Data Analytics</h3>
         <div id="data-projects" class="project-list hidden">
           <div class="project-item">
@@ -116,6 +303,8 @@
   
       <!-- Web Development Projects -->
       <div class="project-category" onclick="toggleProjects('web-projects')">
+        <i class="fas fa-laptop-code"></i>
+
         <h3 class="category-title">Web Development</h3>
         <div id="web-projects" class="project-list hidden">
           <div class="project-item">
@@ -131,35 +320,46 @@
       </div>
     </div>
   </section>
-  
-  <section id="experience">
-    <h2>Work Experience</h2>
-    <ul>
-      <li><strong>Web Developer,</strong> West African Genetic Medicine Centre (WAGMC) - <strong>2024</strong></li>
-      <li><strong>Research Intern,</strong> Distributed IoT Platforms, Privacy and Edge-Intelligence Research (DIPPER) Lab - <strong>2023-2024</strong></li>
-      <li><strong>Network Administrator,</strong> Fountain Care Hospital Limited - <strong>2022-2023</strong></li>
-      <li><strong>Project Intern,</strong> KNUST College of Engineering Innovation Lab - <strong>2021-2022</strong></li>
 
-
-    </ul>
-  </section>
-
+  <!-- Education Section -->
   <section id="education">
-    <h2>Education</h2>
-    <p>Bachelor of Science in Computer Engineering, Kwame Nkrumah University of Science and Technology, 2020-2024</p>
+    <div class="section-header">
+      <i class="fas fa-graduation-cap"></i>
+      <h2>Education</h2>
+    </div>
+    <div class="education-card">
+      <i class="fas fa-university"></i>
+      <h3>BSc Computer Engineering</h3>
+      <p>Kwame Nkrumah University of Science and Technology</p>
+      <p class="education-duration">2020 - 2024</p>
+    </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <strong><a href="mailto:you@example.com">ferkamichaelgha@gmail.com</a></strong></p>
-    <p>Phone <strong>+233 556467049</strong></p>
+    <div class="section-header">
+      <i class="fas fa-envelope"></i>
+      <h2>Get in Touch</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <i class="fas fa-envelope-open-text"></i>
+        <h3>Email</h3>
+        <a href="mailto:ferkamichaelgha@gmail.com">ferkamichaelgha@gmail.com</a>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Phone</h3>
+        <p>+233 556467049</p>
+      </div>
+    </div>
   </section>
 
+  
   <section id="resume">
     <h2>Resume</h2>
     <button id="download-resume">Download My Resume</button>
   </section>
-
   <footer>
     <p>&copy; 2024 Ferka Michael. All rights reserved.</p>
     <div class="social-icons">
@@ -169,7 +369,6 @@
       </div>
   </footer>
 
-  <script src="script.js"></script>
   <script>
     // Toggle visibility of project lists
     function toggleProjects(id) {
@@ -237,8 +436,45 @@
       document.getElementById("projects").classList.remove("hidden");
     }
   </script>
-  
+   <script src="script.js"></script>
+
   <style>
+    .about-grid,
+    .skills-grid,
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .education-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .contact-card {
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .education-duration {
+      color: #6a11cb;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
     .hidden {
       display: none;
     }

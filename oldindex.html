@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferka Michael</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-container">
+      <h1 class="logo">Ferka Michael</h1>
+      <i class="fas fa-bars menu-icon" id="menu-open"></i>
+      <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <i class="fas fa-times" id="menu-close"></i>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <div class="header-content">
+      <img src="Images/ferkamichael.jpeg" alt="Ferka Michael" class="profile-pic">
+      <div class="header-word">
+      <h1>Ferka Michael</h1>
+      <p>Computer Engineer | Web Developer | AI/ML Practitioner | Data Analyst | IoT Enthusiast </p>
+      <div class="social-icons">
+        <a href="https://github.com/Mike-ferka" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/michael_ferka" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com/in/michaelferka" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p> I am Michael Ferka, a Computer Engineer with expertise in Data Science, Artificial Intelligence, IoT, and Full-Stack Web Development. My work focuses on developing intelligent, data-driven systems that enhance efficiency and decision-making across industries such as agriculture, healthcare, and automation.</p>
+    <h2>What I Do</h2>
+    <p>✅ <strong>Data Science & AI/ML</strong> – Data analytics, predictive modeling, machine learning</p>
+    <p>✅ <strong>IoT & Embedded Systems</strong> – Microcontroller Programming, sensor integration, cloud connectivity</p>
+    <p>✅ <strong>Web Development</strong> – Full-stack development with React, Node.js, Express, and MongoDB, API development</p>
+    <p>✅ <strong>Software Engineering </strong>Cloud computing, and scalable architectures</p>
+  <h2>My Vision</h2>
+  <p>I am committed to leveraging data analytics, machine learning, and IoT to develop scalable and sustainable solutions. My work aims to bridge the gap between technology and real-world applications, particularly in agriculture, healthcare, and smart automation.</p>
+  
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Programming Languages:</strong> Python, C++, C, PHP</li>
+      <li><strong>Web Technologies:</strong> HTML, CSS, Bootsrap, JavaScript, React.js, Node.js, Express.js</li>
+      <li><strong>Machine Learning: </strong>Numpy, Pandas, XGBoost, CatBoost,Scikit-learn, Tensorflow, OpenCV</li>
+      <li><strong>Data Analysis: </strong>Dashboard, Data Analysis, Data Storytelling, Data Visualization, Excel, SQL, Tableau</li>
+      <li><strong>Database Management: </strong>SQL, MySQL, PostgreSQL, Firebase, MongoDB</li>
+      <li><strong>Tools & Technologies: </strong>Git</li>
+      <li><strong>Operating Systems: </strong>Windows, Linux</li>
+      <li><strong>Embedded systems and IoT: </strong>ATmega328, ESP8266 NodeMCU, ESP32, LoRaWAN, Sensor Integration, Sensor Callibration</li>
+     
+
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <!-- IoT Projects -->
+      <div class="project-category" onclick="toggleProjects('iot-projects')">
+        <h3 class="category-title" >IoT & Embedded</h3>
+        <div id="iot-projects" class="project-list hidden">
+          <div class="project-item">
+            <a href="Farmsense.html" target="_blank">FarmSense: Solar-powered Smart Weather Station for effective Crop production in Ghana</a>
+          </div>
+          <div class="project-item">
+            <a href="smart-irrigation.html" target="_blank">Smart Irrigation System</a>
+          </div>
+          <div class="project-item">
+            <a href="tank-filling.html" target="_blank">Automatic tank filling System</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Machine Learning Projects -->
+      <div class="project-category" onclick="toggleProjects('ml-projects')">
+        <h3 class="category-title" >Machine Learning</h3>
+        <div id="ml-projects" class="project-list hidden">
+          <div class="project-item">
+            <a href="https://github.com/Mike-ferka/Data-Science-and-ML/" target="_blank">Building A Brain in 10min</a>
+          </div>
+          <div class="project-item">
+            <a href="#" target="_blank">Crop Yield Prediction</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Data Analytics Projects -->
+      <div class="project-category"  onclick="toggleProjects('data-projects')">
+        <h3 class="category-title">Data Analytics</h3>
+        <div id="data-projects" class="project-list hidden">
+          <div class="project-item">
+            <a href="#" target="_blank">Sales Data Analysis</a>
+          </div>
+          <div class="project-item">
+            <a href="#" target="_blank">Market Trend Insights</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Web Development Projects -->
+      <div class="project-category" onclick="toggleProjects('web-projects')">
+        <h3 class="category-title">Web Development</h3>
+        <div id="web-projects" class="project-list hidden">
+          <div class="project-item">
+            <a href="https://www.fountaincarehospital.com" target="_blank">Fountain Care Hospital Limited Website</a>
+          </div>
+          <div class="project-item">
+            <a href="Farmsense.html" target="_blank">FarmSense Final-Year-Project</a>
+          </div>
+          <div class="project-item">
+            <a href="lab-results-management.html" target="_blank">Lab Results management system</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <ul>
+      <li><strong>Web Developer,</strong> West African Genetic Medicine Centre (WAGMC) - <strong>2024</strong></li>
+      <li><strong>Research Intern,</strong> Distributed IoT Platforms, Privacy and Edge-Intelligence Research (DIPPER) Lab - <strong>2023-2024</strong></li>
+      <li><strong>Network Administrator,</strong> Fountain Care Hospital Limited - <strong>2022-2023</strong></li>
+      <li><strong>Project Intern,</strong> KNUST College of Engineering Innovation Lab - <strong>2021-2022</strong></li>
+
+
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p>Bachelor of Science in Computer Engineering, Kwame Nkrumah University of Science and Technology, 2020-2024</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <strong><a href="mailto:you@example.com">ferkamichaelgha@gmail.com</a></strong></p>
+    <p>Phone <strong>+233 556467049</strong></p>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <button id="download-resume">Download My Resume</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Ferka Michael. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="https://github.com/Mike-ferka" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/michael_ferka" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com/in/michaelferka" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Toggle visibility of project lists
+    function toggleProjects(id) {
+      const projectList = document.getElementById(id);
+      projectList.classList.toggle("hidden");
+    }
+  
+    // Show project details
+    function showProjectDetails(projectId) {
+      const projectDetails = {
+        iot1: {
+          title: "IoT Weather Station",
+          image: "images/iot_weather_station.jpg",
+          content: "An IoT-based weather monitoring system using ESP8266 and Firebase.",
+        },
+        iot2: {
+          title: "Smart Irrigation System",
+          image: "images/smart_irrigation.jpg",
+          content: "A system to automate irrigation based on soil moisture levels.",
+        },
+        ml1: {
+          title: "Urban Air Quality Prediction",
+          image: "images/air_quality.jpg",
+          content: "A machine learning project predicting PM2.5 levels using Sentinel-5P data.",
+        },
+        ml2: {
+          title: "Crop Yield Prediction",
+          image: "images/crop_yield.jpg",
+          content: "Using ML models to forecast crop yields for smart farming.",
+        },
+        data1: {
+          title: "Sales Data Analysis",
+          image: "images/sales_analysis.jpg",
+          content: "Analyzing sales data to provide actionable business insights.",
+        },
+        data2: {
+          title: "Market Trend Insights",
+          image: "images/market_trends.jpg",
+          content: "A dashboard providing real-time market trends using Power BI.",
+        },
+        web1: {
+          title: "Hospital Management System",
+          image: "images/hospital_system.jpg",
+          content: "A React-based web application for managing hospital operations.",
+        },
+        web2: {
+          title: "Portfolio Website",
+          image: "images/portfolio.jpg",
+          content: "A personal portfolio showcasing professional projects and skills.",
+        },
+      };
+  
+      const details = projectDetails[projectId];
+      document.getElementById("project-title").innerText = details.title;
+      document.getElementById("project-image").src = details.image;
+      document.getElementById("project-content").innerText = details.content;
+  
+      document.getElementById("projects").classList.add("hidden");
+      document.getElementById("project-details").classList.remove("hidden");
+    }
+  
+    // Hide project details
+    function hideProjectDetails() {
+      document.getElementById("project-details").classList.add("hidden");
+      document.getElementById("projects").classList.remove("hidden");
+    }
+  </script>
+  
+  <style>
+    .hidden {
+      display: none;
+    }
+  
+    .project-category {
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px;
+      background-color: #f9f9f9;
+    }
+  
+    .category-title {
+      cursor: pointer;
+      font-weight: bold;
+    }
+  
+    .project-list {
+      margin-top: 10px;
+    }
+  
+    .project-item {
+      cursor: pointer;
+      padding: 5px;
+      margin: 5px 0;
+      background-color: #eee;
+      border-radius: 3px;
+      transition: background-color 0.3s;
+    }
+  
+    .project-item:hover {
+      background-color: #ddd;
+    }
+  
+    #project-details img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+  </style>
+</body>
+</html>

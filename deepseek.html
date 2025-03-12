@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Existing head content -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Add new styles */
+    .section-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .section-header i {
+      font-size: 2.5rem;
+      color: #6a11cb;
+      margin-bottom: 1rem;
+    }
+    .feature-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+    .timeline-item {
+      border-left: 3px solid #6a11cb;
+      padding-left: 2rem;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      background: #6a11cb;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+ <!-- Navigation Bar -->
+ <nav>
+    <div class="nav-container">
+      <h1 class="logo">Ferka Michael</h1>
+      <i class="fas fa-bars menu-icon" id="menu-open"></i>
+      <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <i class="fas fa-times" id="menu-close"></i>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <div class="header-content">
+      <img src="Images/ferkamichael.jpeg" alt="Ferka Michael" class="profile-pic">
+      <div class="header-word">
+        <h1>Ferka Michael</h1>
+        <p>Computer Engineer | Web Developer | AI/ML Practitioner | Data Analyst | IoT Enthusiast</p>
+        <div class="social-icons">
+          <!-- Social icons -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-header">
+      <i class="fas fa-user-alt"></i>
+      <h2>About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="feature-card">
+        <i class="fas fa-brain"></i>
+        <h3>AI/ML Specialist</h3>
+        <p>Building intelligent systems with TensorFlow and OpenCV</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-code"></i>
+        <h3>Full-Stack Developer</h3>
+        <p>Creating web solutions with MERN stack</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Data Analyst</h3>
+        <p>Transforming data into actionable insights</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="section-header">
+      <i class="fas fa-tools"></i>
+      <h2>Technical Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fab fa-python"></i>
+        <h3>Python & AI/ML</h3>
+        <ul>
+          <li>TensorFlow</li>
+          <li>OpenCV</li>
+          <li>Scikit-learn</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-database"></i>
+        <h3>Databases</h3>
+        <ul>
+          <li>MongoDB</li>
+          <li>PostgreSQL</li>
+          <li>Firebase</li>
+        </ul>
+      </div>
+      <!-- Add more skill cards -->
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="section-header">
+      <i class="fas fa-briefcase"></i>
+      <h2>Professional Journey</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Web Developer @ WAGMC</h3>
+        <p class="timeline-date">2024</p>
+        <p>Developed enterprise web solutions using modern frameworks</p>
+      </div>
+      <!-- Add more timeline items -->
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="section-header">
+      <i class="fas fa-graduation-cap"></i>
+      <h2>Education</h2>
+    </div>
+    <div class="education-card">
+      <i class="fas fa-university"></i>
+      <h3>BSc Computer Engineering</h3>
+      <p>Kwame Nkrumah University of Science and Technology</p>
+      <p class="education-duration">2020 - 2024</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-header">
+      <i class="fas fa-envelope"></i>
+      <h2>Get in Touch</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <i class="fas fa-envelope-open-text"></i>
+        <h3>Email</h3>
+        <a href="mailto:ferkamichaelgha@gmail.com">ferkamichaelgha@gmail.com</a>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Phone</h3>
+        <p>+233 556467049</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Existing other sections -->
+
+  <!-- Update styles.css with these additions -->
+  <style>
+    .about-grid,
+    .skills-grid,
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .education-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .contact-card {
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .education-duration {
+      color: #6a11cb;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+  </style>
+</body>
+</html>
